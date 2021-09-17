@@ -20,8 +20,6 @@
     export function NewTransactionModal ({isOpen, onRequestClose}: NewTransactionModalProps) {
         const [type, setType] = useState('deposit');
        
-        console.log('teste');
-
         return (
 
         <Modal
