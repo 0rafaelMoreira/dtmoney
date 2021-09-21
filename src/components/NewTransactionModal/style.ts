@@ -1,3 +1,4 @@
+import { transparentize } from "polished";
 import styled from "styled-components";
 
 
@@ -86,10 +87,9 @@ export const RadioBox = styled.button<RadioBoxProps>`
     border-radius: 0.25rem;
 
     background: ${ (props) => props.isActive
-    ? colors[props.activeColor]
-   
-    : 'transparent'
-};
+        ? transparentize(0.9, colors[props.activeColor])
+        : 'transparent'
+    };
     display: flex;
     align-items: center;
     justify-content:center;

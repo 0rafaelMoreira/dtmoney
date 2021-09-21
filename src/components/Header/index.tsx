@@ -7,7 +7,7 @@ interface HeaderProps {
     onOpenNewTransitionModal: () => void;
 
 
-}
+};
 
 
 export function Header({onOpenNewTransitionModal}: HeaderProps) {
@@ -24,4 +24,4 @@ export function Header({onOpenNewTransitionModal}: HeaderProps) {
             </Content> 
         </Container>
     )
-}
+};
